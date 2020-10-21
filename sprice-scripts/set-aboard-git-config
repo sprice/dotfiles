@@ -1,0 +1,4 @@
+#!/bin/sh
+git config user.email "shawn@getaboard.co"
+git config user.signingkey "B989CA40BED27AD7"
+git config commit.gpgsign true

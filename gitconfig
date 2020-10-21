@@ -1,0 +1,43 @@
+[user]
+	name = Shawn Price
+	email = shawnp@gmail.com
+[color]
+  ui = auto
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+	whitespace = red reverse
+[color "status"]
+  added = yellow
+  changed = cyan
+  untracked = green
+[core]
+  whitespace=fix,-indent-with-non-tab,-indent-with-tab,trailing-space,cr-at-eol
+  excludesfile = ~/.gitignore_global
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[diff]
+  renames = copies
+[alias]
+  br = branch
+  co = checkout
+  ci = commit
+  cp = cherry-pick
+  st = status
+  changed = !git --no-pager diff --name-only
+  d  = diff
+  hash = rev-parse HEAD
+  latest = for-each-ref --sort=-committerdate refs/heads --format='%(committerdate:short) %(refname:short)'
+  ls  = ls-files
+  s  = status
+  undo = reset --soft HEAD^
+  unstage = reset HEAD
+[branch]
+  autosetupmerge = true
+[push]
+	default = current
+[credential]
+	helper = osxkeychain
+[github]
+  user = sprice

@@ -41,3 +41,5 @@
 	helper = osxkeychain
 [github]
   user = sprice
+[url "git@github.com:"]
+  insteadOf = https://github.com/
